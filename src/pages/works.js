@@ -32,7 +32,7 @@ export default function Works() {
         </Card>
         <Card
           img="/OpenGL.jpg"
-          title="Library-app"
+          title="Work with OpenGL"
           to="https://github.com/vitaliy65/library-app"
         >
           A course of several tasks for creating 3D graphics using OpenGL,
