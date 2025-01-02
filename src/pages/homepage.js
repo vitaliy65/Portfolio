@@ -3,14 +3,7 @@ import React from "react";
 import { ReactComponent as Discord } from "../components/svg/discord.svg";
 import { ReactComponent as Telegram } from "../components/svg/telegram.svg";
 import { ReactComponent as RightArrow } from "../components/svg/right-arrow.svg";
-
-function Heading({ children }) {
-  return (
-    <h3 class="underline underline-offset-8 decoration-solid my-3 font-bold">
-      {children}
-    </h3>
-  );
-}
+import Heading from "../components/Heading";
 
 function Article({ children, heading }) {
   return (
@@ -149,10 +142,6 @@ export default function Homepage() {
             </WebLink>
           </ul>
         </Article>
-
-        <footer class="flex justify-center items-center text-sm text-zinc-600">
-          &copy; 2025 Posvistak Vitaliy. All Rights Reserved.
-        </footer>
       </div>
     </article>
   );

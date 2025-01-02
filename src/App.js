@@ -1,11 +1,16 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/main";
 import Homepage from "./pages/homepage";
+import Works from "./pages/works";
 
 export default function App() {
   return (
     <Layout>
-      <Homepage />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/works" element={<Works />} />
+      </Routes>
     </Layout>
   );
 }
