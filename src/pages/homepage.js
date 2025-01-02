@@ -32,7 +32,7 @@ function EducationTable({ children, title }) {
 
 function WebLink({ children, to }) {
   return (
-    <li>
+    <li class="w-fit h-fit">
       <a href={to} target="_blank" rel="noreferrer">
         <button
           class="flex 
