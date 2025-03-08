@@ -4,6 +4,8 @@ import { ReactComponent as Discord } from "../components/svg/discord.svg";
 import { ReactComponent as Telegram } from "../components/svg/telegram.svg";
 import { ReactComponent as RightArrow } from "../components/svg/right-arrow.svg";
 import Heading from "../components/Heading";
+import { SkillsGrid } from "../components/skills/skillsGrid";
+import { SkillCard } from "../components/skills/skillCard";
 
 function Article({ children, heading }) {
   return (
@@ -82,6 +84,21 @@ export default function Homepage() {
           for a job <span>&lt;3</span>.
         </Article>
 
+        <article>
+          <Heading>Skills</Heading>
+          <SkillsGrid>
+            <SkillCard iconpath="html.png" skillName="HTML" />
+            <SkillCard iconpath="css.png" skillName="CSS" />
+            <SkillCard iconpath="js.png" skillName="JavaScript" />
+            <SkillCard iconpath="typescript.png" skillName="TypeScript" />
+            <SkillCard iconpath="atom.png" skillName="React" />
+            <SkillCard iconpath="nextjs.png" skillName="Next.js" />
+            <SkillCard iconpath="nodejs.png" skillName="Node.js" />
+            <SkillCard iconpath="tailwindcss.jpg" skillName="TailwindCSS" />
+          </SkillsGrid>
+        </article>
+
+        {/* Education */}
         <Article heading="Education">
           <EducationTable title="2019">
             Graduated from Kakhovka secondary school of I-III levels No. 5 of

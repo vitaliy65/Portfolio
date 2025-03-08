@@ -39,6 +39,17 @@ export default function Works() {
           studied for creating games, this is the first part of a course
           consisting of three...
         </Card>
+
+        <Card
+          img="/fitness.png"
+          title="fitness-app BetterFitness"
+          to="https://github.com/vitaliy65/better-fitness"
+        >
+          Web application for fitness, where you can create your own training
+          program. Created with Next.js, MongoDB, and TailwindCSS. This is my
+          course project, where I learned how to use Next.js and connect to the
+          database with it. How to use routes to interact with front-end.
+        </Card>
       </div>
     </div>
   );
