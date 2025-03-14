@@ -1,5 +1,6 @@
 import React from "react";
 
+// new card
 export default function Card({ children, img, title, to }) {
   return (
     <div className="mb-4 flex flex-col items-center w-full">
