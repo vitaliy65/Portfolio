@@ -3,14 +3,14 @@ import React from "react";
 import { ReactComponent as Discord } from "../components/svg/discord.svg";
 import { ReactComponent as Telegram } from "../components/svg/telegram.svg";
 import { ReactComponent as RightArrow } from "../components/svg/right-arrow.svg";
-import Heading from "../components/heading";
+import Title from "../components/title";
 import { SkillsGrid } from "../components/skills/skillsGrid";
 import { SkillCard } from "../components/skills/skillCard";
 
 function Article({ children, heading }) {
   return (
     <div class="mb-8 flex flex-col">
-      <Heading>{heading}</Heading>
+      <Title>{heading}</Title>
       <div class="text-justify">{children}</div>
     </div>
   );
@@ -85,7 +85,7 @@ export default function Homepage() {
         </Article>
 
         <article>
-          <Heading>Skills</Heading>
+          <Title>Skills</Title>
           <SkillsGrid>
             <SkillCard iconpath="html.png" skillName="HTML" />
             <SkillCard iconpath="css.png" skillName="CSS" />

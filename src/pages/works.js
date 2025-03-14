@@ -1,11 +1,11 @@
 import React from "react";
-import Heading from "../components/heading";
+import Title from "../components/title";
 import Card from "../components/card";
 
 export default function Works() {
   return (
     <div className="px-4 pt-20">
-      <Heading>Works</Heading>
+      <Title>Works</Title>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-6 pt-4">
         <Card
           img="/LibraryApp.jpg"
