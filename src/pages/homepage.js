@@ -3,7 +3,7 @@ import React from "react";
 import { ReactComponent as Discord } from "../components/svg/discord.svg";
 import { ReactComponent as Telegram } from "../components/svg/telegram.svg";
 import { ReactComponent as RightArrow } from "../components/svg/right-arrow.svg";
-import Heading from "../components/Heading";
+import Heading from "../components/heading";
 import { SkillsGrid } from "../components/skills/skillsGrid";
 import { SkillCard } from "../components/skills/skillCard";
 
@@ -11,7 +11,7 @@ function Article({ children, heading }) {
   return (
     <div class="mb-8 flex flex-col">
       <Heading>{heading}</Heading>
-      <p class="text-justify">{children}</p>
+      <div class="text-justify">{children}</div>
     </div>
   );
 }
@@ -54,22 +54,22 @@ function WebLink({ children, to }) {
 export default function Homepage() {
   return (
     <article>
-      <div class="px-4 pt-20">
+      <div className="px-4 pt-20">
         {/* title of the page */}
-        <div class="dark:bg-[#323232] bg-[#f6f0e8] rounded-md p-2 mb-7 text-center">
+        <div className="dark:bg-[#323232] bg-[#f6f0e8] rounded-md p-2 mb-7 text-center">
           Hello i'm React developer based in Ukraine
         </div>
         {/* about author */}
-        <div class="flex">
-          <div class="flex flex-col justify-center">
-            <div class="text-3xl font-bold">Vitaliy Posvistak</div>
+        <div className="flex">
+          <div className="flex flex-col justify-center">
+            <div className="text-3xl font-bold">Vitaliy Posvistak</div>
             <p>Developer (JavaScript / React / Node.js)</p>
           </div>
-          <div class="ml-auto">
+          <div className="ml-auto">
             <img
               src="/myPhoto.png"
               alt="myPhoto"
-              class="w-24 h-fit rounded-full border-2 border-l-yellow-100"
+              className="w-24 h-fit rounded-full border-2 border-l-yellow-100"
             ></img>
           </div>
         </div>
@@ -119,21 +119,21 @@ export default function Homepage() {
           <EducationTable title="2024">
             participated in GlobalGameJam for the "Clownery" team
           </EducationTable>
-          <div class="flex justify-center items-center my-4">
+          <div className="flex justify-center items-center my-4">
             <a
               href="https://globalgamejam.org/games/2024/clownery-adventure-extreme-bbq-4"
               target="_blank"
               rel="noreferrer"
             >
-              <button class="flex justify-center items-center bg-teal-300 text-black text-lg p-1 px-4 rounded hover:bg-teal-500">
-                Jam web-site <RightArrow class="h-3 w-3 ml-2" />
+              <button className="flex justify-center items-center bg-teal-300 text-black text-lg p-1 px-4 rounded hover:bg-teal-500">
+                Jam web-site <RightArrow className="h-3 w-3 ml-2" />
               </button>
             </a>
           </div>
         </Article>
 
         <Article heading="I ♥">
-          <p class="">
+          <p className="">
             Art, Music, Drawing, Playing games, Coding, Moding for minecraft,
             Make games
           </p>
@@ -142,11 +142,11 @@ export default function Homepage() {
         <Article heading="On the web">
           <ul>
             <WebLink to={"https://www.instagram.com/_vitalio.p_/"}>
-              <Instagram class="h-5 w-5 mr-2" />
+              <Instagram className="h-5 w-5 mr-2" />
               @_vitalio.p_
             </WebLink>
             <WebLink to={"https://github.com/vitaliy65"}>
-              <Github class="h-5 w-5 mr-2" />
+              <Github className="h-5 w-5 mr-2" />
               @vitaliy65
             </WebLink>
             <WebLink to={"https://t.me/Vitalas_P"}>

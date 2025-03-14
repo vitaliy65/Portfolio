@@ -2,7 +2,11 @@ import React from "react";
 
 export const SkillCard = ({ iconpath, skillName }) => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div
+      className="flex flex-col justify-center items-center rounded-xl lg:p-4 p-2 transition-all
+      dark:bg-[#1c1c1c] 
+      bg-[#f6f0e8]"
+    >
       <img
         src={`icons/${iconpath}`}
         alt="icon"

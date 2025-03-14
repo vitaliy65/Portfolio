@@ -1,11 +1,11 @@
 import { React, useEffect, useState } from "react";
-import { useTheme } from "../context/ThemeContext";
-import Logo from "./logo";
-import LinkItem from "./LinkItem";
-import links from "../data/Links";
+import { useAppSelector } from "../hooks/hooks.ts";
+import Logo from "./logo.js";
+import LinkItem from "./LinkItem.js";
+import links from "../data/Links.js";
 
 export default function LinkList() {
-  const { theme } = useTheme();
+  const theme = useAppSelector((state) => state.themeState.theme);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [selected, setSelected] = useState(null);
 

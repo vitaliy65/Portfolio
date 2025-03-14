@@ -1,14 +1,27 @@
 "use client";
 
-import { useTheme } from "../context/ThemeContext";
+import React, { useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../hooks/hooks.ts";
+import { toggleTheme } from "../state/theme/themeSlice.ts";
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const theme = useAppSelector((state) => state.themeState.theme);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.remove("dark");
+    } else {
+      document.body.classList.add("dark");
+    }
+  }, [theme]);
 
   return (
     <button
-      onClick={toggleTheme}
-      class="flex 
+      onClick={() => {
+        dispatch(toggleTheme());
+      }}
+      className="flex 
       justify-center 
       items-center 
       h-full w-10 

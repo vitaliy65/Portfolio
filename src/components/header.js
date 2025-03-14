@@ -6,7 +6,7 @@ import { ThemeToggle } from "./ThemeToggle";
 export default function header() {
   return (
     <div
-      class="flex z-10
+      className="flex z-10
     h-14 
     w-full 
     items-center 

@@ -1,7 +1,7 @@
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/layout/main";
+import Layout from "./pages/layout/main.js";
 import Homepage from "./pages/homepage";
 import Works from "./pages/works";
 

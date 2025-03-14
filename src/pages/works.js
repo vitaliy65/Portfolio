@@ -1,12 +1,12 @@
 import React from "react";
-import Heading from "../components/Heading";
-import Card from "../components/Card";
+import Heading from "../components/heading";
+import Card from "../components/card";
 
 export default function Works() {
   return (
-    <div class="px-4 pt-20">
+    <div className="px-4 pt-20">
       <Heading>Works</Heading>
-      <div class="grid md:grid-cols-2 grid-cols-1 gap-6 pt-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 pt-4">
         <Card
           img="/LibraryApp.jpg"
           title="Library-app"

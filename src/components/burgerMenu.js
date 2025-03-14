@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from "react";
-import { useTheme } from "../context/ThemeContext";
-import BurgerLinkItem from "./BurgerLinkItem";
+import BurgerLinkItem from "./burgerLinkItem.js";
 import links from "../data/Links";
+import { useAppSelector } from "../hooks/hooks.ts";
 
 export default function BurgerMenu() {
-  const { theme } = useTheme();
+  const theme = useAppSelector((state) => state.themeState.theme);
   const [openMenu, setOpenMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
