@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../components/Title";
+import Title from "../components/General/Title";
 import Card from "../components/WorkPageComponents/WorkCard";
 
 export default function Works() {
