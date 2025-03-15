@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/title";
-import Card from "../components/card";
+import Card from "../components/workCard";
 
 export default function Works() {
   return (
