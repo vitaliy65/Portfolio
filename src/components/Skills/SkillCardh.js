@@ -1,5 +1,6 @@
 import React from "react";
 
+// SkillCard component
 export default function SkillCard({ iconpath, skillName }) {
   return (
     <div
