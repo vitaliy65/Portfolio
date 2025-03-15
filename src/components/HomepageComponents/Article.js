@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../Title";
+import Title from "../General/Title";
 
 export default function Article({ children, heading }) {
   return (

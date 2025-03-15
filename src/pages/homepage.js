@@ -3,7 +3,7 @@ import React from "react";
 import { ReactComponent as Discord } from "../components/svg/discord.svg";
 import { ReactComponent as Telegram } from "../components/svg/telegram.svg";
 import { ReactComponent as RightArrow } from "../components/svg/right-arrow.svg";
-import Title from "../components/Title";
+import Title from "../components/General/Title";
 import SkillsGrid from "../components/Skills/SkillsGrid";
 import SkillCard from "../components/Skills/SkillCard";
 import WebLink from "../components/HomepageComponents/WebLink";
