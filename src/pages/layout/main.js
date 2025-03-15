@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../components/header";
+import Header from "../../components/Header/Header";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 

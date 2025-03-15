@@ -3,53 +3,12 @@ import React from "react";
 import { ReactComponent as Discord } from "../components/svg/discord.svg";
 import { ReactComponent as Telegram } from "../components/svg/telegram.svg";
 import { ReactComponent as RightArrow } from "../components/svg/right-arrow.svg";
-import Title from "../components/title";
-import { SkillsGrid } from "../components/skills/skillsGrid";
-import { SkillCard } from "../components/skills/skillCard";
-
-function Article({ children, heading }) {
-  return (
-    <div class="mb-8 flex flex-col">
-      <Title>{heading}</Title>
-      <div class="text-justify">{children}</div>
-    </div>
-  );
-}
-
-function EducationTable({ children, title }) {
-  return (
-    <div class="flex mb-2">
-      <span class="w-fit mr-4 font-bold ">{title}</span>
-      <p>{children}</p>
-    </div>
-  );
-}
-
-function WebLink({ children, to }) {
-  return (
-    <li class="w-fit h-fit">
-      <a href={to} target="_blank" rel="noreferrer">
-        <button
-          class="flex 
-        justify-center 
-        items-center 
-        h-fit w-fit 
-        text-base 
-        font-bold 
-        text-teal-800 
-        dark:text-teal-300 
-        hover:bg-teal-100 
-        dark:hover:bg-teal-500 
-        dark:hover:bg-opacity-10 
-        px-3 py-2 
-        rounded-lg"
-        >
-          {children}
-        </button>
-      </a>
-    </li>
-  );
-}
+import Title from "../components/Title";
+import SkillsGrid from "../components/Skills/SkillsGrid";
+import SkillCard from "../components/Skills/SkillCard";
+import WebLink from "../components/HomepageComponents/WebLink";
+import EducationTable from "../components/HomepageComponents/EducationTable";
+import Article from "../components/HomepageComponents/Article";
 
 export default function Homepage() {
   return (

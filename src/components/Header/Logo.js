@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAppSelector } from "../hooks/hooks.ts";
+import { useAppSelector } from "../../hooks/Hooks.ts";
 
 export default function Logo({ onClick }) {
   const theme = useAppSelector((state) => state.themeState.theme);

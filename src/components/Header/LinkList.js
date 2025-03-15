@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from "react";
-import { useAppSelector } from "../hooks/hooks.ts";
-import Logo from "./logo.js";
+import { useAppSelector } from "../../hooks/Hooks.ts";
+import Logo from "./Logo.js";
 import LinkItem from "./LinkItem.js";
-import links from "../data/Links.js";
+import links from "../../data/Links.js";
 
 export default function LinkList() {
   const theme = useAppSelector((state) => state.themeState.theme);

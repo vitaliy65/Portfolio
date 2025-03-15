@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SkillCard = ({ iconpath, skillName }) => {
+export default function SkillCard({ iconpath, skillName }) {
   return (
     <div
       className="flex flex-col justify-center items-center rounded-xl lg:p-4 p-2 transition-all
@@ -15,4 +15,4 @@ export const SkillCard = ({ iconpath, skillName }) => {
       <p className="text-center text-sm sm:text-xl">{skillName}</p>
     </div>
   );
-};
+}
