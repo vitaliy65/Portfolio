@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../hooks/Hooks.ts";
+import { useAppDispatch, useAppSelector } from "../../hooks/hooks.ts";
 import { toggleTheme } from "../../state/theme/themeSlice.ts";
 
 export function ThemeToggle() {

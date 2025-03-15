@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { useAppSelector } from "../../hooks/Hooks.ts";
+import { useAppSelector } from "../../hooks/hooks.ts";
 import Logo from "./Logo.js";
 import LinkItem from "./LinkItem.js";
 import links from "../../data/Links.js";

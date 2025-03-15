@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import BurgerLinkItem from "./BurgerLinkItem.js";
 import links from "../../data/Links.js";
-import { useAppSelector } from "../../hooks/Hooks.ts";
+import { useAppSelector } from "../../hooks/hooks.ts";
 
 export default function BurgerMenu() {
   const theme = useAppSelector((state) => state.themeState.theme);
