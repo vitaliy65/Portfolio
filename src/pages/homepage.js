@@ -22,7 +22,7 @@ export default function Homepage() {
         <div className="flex">
           <div className="flex flex-col justify-center">
             <div className="text-3xl font-bold">Vitaliy Posvistak</div>
-            <p>Developer (JavaScript / React / Node.js)</p>
+            <p>Developer (JavaScript / React / Next.js / Node.js)</p>
           </div>
           <div className="ml-auto">
             <img
